@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
-
+using dotnet.Models;
 
 namespace dotnet.Controllers
 {
@@ -17,7 +17,7 @@ namespace dotnet.Controllers
 
         public IActionResult Index()
         {
-            var item = db.Dealer;
+            var item = db.Dealers;
 
             return View(item);
         }
