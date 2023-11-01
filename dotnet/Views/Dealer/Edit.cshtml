@@ -1,0 +1,40 @@
+@model dotnet.Models.Dealer
+@using (Html.BeginForm())
+{
+   <div>
+    @Html.HiddenFor(m=>m.ID)
+   </div>
+    <div>
+        @Html.DisplayNameFor(m=>m.Name)
+        @Html.EditorFor(m=>m.Name)
+    </div>
+    <div>
+        @Html.DisplayNameFor(m=>m.RegistrationDate)
+        @Html.EditorFor(m=>m.RegistrationDate)
+    </div>
+    <div>
+        @Html.DisplayNameFor(m=>m.AutoPartsName)
+        @Html.EditorFor(m=>m.AutoPartsName)
+    </div>
+    <div>
+        @Html.DisplayNameFor(m=>m.Manufacturer)
+        @Html.EditorFor(m=>m.Manufacturer)
+    </div>
+    <div>
+        @Html.DisplayNameFor(m=>m.MobileNumber)
+        @Html.EditorFor(m=>m.MobileNumber)
+    </div>
+    <div>
+        @Html.DisplayNameFor(m=>m.Email)
+        @Html.EditorFor(m=>m.Email)
+    </div>
+    <div>
+        @Html.DisplayNameFor(m=>m.Description)
+        @Html.EditorFor(m=>m.Description)
+    </div>
+    <input type="submit" value="Add Dealer"/>
+    <br>
+
+    
+    
+}

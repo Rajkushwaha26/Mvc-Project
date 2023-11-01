@@ -53,7 +53,7 @@ namespace dotnet.Controllers
         public IActionResult Edit(int id){
             var deta = db.Dealers.FirstOrDefault(e=>e.ID==id);
             if(deta!=null){
-                return ErrorViewModel(deta);
+                return View(deta);
             }else{
                 return RedirectToAction("Index");
             }
@@ -61,8 +61,11 @@ namespace dotnet.Controllers
         }
 
         [HttpPost]
-        public IActionResult Edit(){
-            
+        public IActionResult Edit(Dealer newobj){
+            db.Update(newobj);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
