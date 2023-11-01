@@ -6,8 +6,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FamilyApp.Models
 {
-    public class FamilyDbContext : Controllers
+    public class FamilyDbContext : DbContext
     {
+        
+        public virtual DbSet<BloodDonor>BloodDonors {set;get;}
+        
         
         
     }
