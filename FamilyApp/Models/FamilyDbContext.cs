@@ -8,9 +8,11 @@ namespace FamilyApp.Models
 {
     public class FamilyDbContext : DbContext
     {
-        public 
+        public FamilyDbContext(DbContextOptions<FamilyDbContext>options):base(options){
+
+        }
         
-        public virtual DbSet<BloodDonor>BloodDonors {set;get;}
+        public virtual DbSet<Detail>Details {set;get;}
         
         
         

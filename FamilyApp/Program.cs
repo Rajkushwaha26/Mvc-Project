@@ -3,8 +3,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<FamilyDbContext>(OptionsBuilderConfigurationExtensions=>{
-    OptionsBuilderConfigurationExtensions.UseSqlServer(builder.Configuration.GetConnectionString("FamilyConnection"));
+builder.Services.AddDbContext<FamilyDbContext>(Options=>{
+    Options.UseSqlServer(builder.Configuration.GetConnectionString("FamilyConnection"));
 
 });
 
