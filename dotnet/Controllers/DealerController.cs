@@ -65,7 +65,7 @@ namespace dotnet.Controllers
         public IActionResult Edit(Dealer newobj){
             db.Update(newobj);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction ("Index");
 
         }
 
