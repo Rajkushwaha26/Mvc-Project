@@ -1,6 +1,6 @@
 @model IEnumerable<CDStudent.Models.Student>
 
-    @Html.ActionLink("Add Student","Create","Stud")
+    @* @Html.ActionLink("Add Student","Create","Studentes") *@
     <table class="table">
         <tr>
             <th>@Html.DisplayNameFor(m=>m.Id)</th>
@@ -19,8 +19,8 @@
                     <td>@item.PhoneNo</td>
                     <td>@item.JoinDate</td>
                     
-                    <td><a asp-controller="Studentes" asp-action="Edit" asp-route-id="@item.Id"/>Edit</td>
-                    <td><a asp-controller="Studentes" asp-action="Delete" asp-route-id="@item.Id"/>Delete</td>
+                    @* <td><a asp-controller="Studentes" asp-action="Edit" asp-route-id="@item.Id"/>Edit</td>
+                    <td><a asp-controller="Studentes" asp-action="Delete" asp-route-id="@item.Id"/>Delete</td> *@
                 </tr>
                 
             }
