@@ -10,14 +10,12 @@ using dotnet.Models;
 
 namespace dotnet.Controllers
 {
-    
     public class DealerController : Controller
     {
         ApplicationDbContext db ;
         public DealerController(ApplicationDbContext context){
             this.db=context;
         }
-
         public IActionResult Index()
         {
             var item = db.Dealers;
