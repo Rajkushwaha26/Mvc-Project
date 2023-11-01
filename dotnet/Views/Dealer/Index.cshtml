@@ -1,0 +1,28 @@
+@model IEnumerable<dotnet.Models.Dealer>
+    <h2> Detail </h2>
+    <table class="table">
+        <tr>
+            <th>@Html.DiplayNamefor(m=>m.ID)</th>
+            <th>@Html.DiplayNamefor(m=>m.Name)</th>
+            <th>@Html.DiplayNamefor(m=>m.RegistrationDate)</th>
+            <th>@Html.DiplayNamefor(m=>m.AutoPartsName)</th>
+            <th>@Html.DiplayNamefor(m=>m.Manufacturer)</th>
+            <th>@Html.DiplayNamefor(m=>m.MobileNumber)</th>
+            <th>@Html.DiplayNamefor(m=>m.Email)</th>
+            <th>@Html.DisplayNamefor(m=>m.Description)</th>
+        </tr>
+        <tbody>
+            <tr>
+                <td>@item.ID</td>
+                <td>@item.Name</td>
+                <td>@item.RegistrationDate</td>
+                <td>@item.AutoPartsName</td>
+                <td>@item.Manufacturer</td>
+                <td>@item.MobileNumber</td>
+                <td>@item.Email</td>
+                <td>@item.Description</td>
+                <td><a asp-controller="" asp-action="" asp-route-id=""</td>
+            </tr>
+        </tbody>
+    </table>
+    <input 
