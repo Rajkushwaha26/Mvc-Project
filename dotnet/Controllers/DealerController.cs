@@ -24,14 +24,45 @@ namespace dotnet.Controllers
 
             return View(item);
         }
+
+        [HttpGet]
         public IActionResult Create(){
+
             return View();
         }
-        public IActionResult Delete(){
+
+        [HttpPost]
+        public IActionResult Create(Dealer dd){
+            db.Dealers.Add(dd);
+            db.SaveChanges();
             return View();
         }
+        public IActionResult Delete(int id){
+            var delet = db.Dealers.Find(id);
+            if(delet!=null){
+                db.Dealers.Remove(delet);
+                db.SaveChanges();
+                
+            }else{
+                return View();
+            }
+            return RedirectToAction("Index");
+            return View();
+        }
+        
+        public IActionResult Edit(int id){
+            var deta = db.Dealers.FirstOrDefault(e=>e.ID==id);
+            if(deta!=null){
+                return ErrorViewModel(deta);
+            }else{
+                return RedirectToAction("Index");
+            }
+            
+        }
+
+        [HttpPost]
         public IActionResult Edit(){
-            return View();
+            
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
