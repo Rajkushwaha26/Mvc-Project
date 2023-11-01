@@ -49,7 +49,8 @@ namespace dotnet.Controllers
             return RedirectToAction("Index");
             return View();
         }
-        
+
+        [HttpGet]
         public IActionResult Edit(int id){
             var deta = db.Dealers.FirstOrDefault(e=>e.ID==id);
             if(deta!=null){
