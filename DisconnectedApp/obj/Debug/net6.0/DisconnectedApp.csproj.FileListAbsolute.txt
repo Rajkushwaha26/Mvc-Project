@@ -1,0 +1,5 @@
+/home/coder/project/workspace/DisconnectedApp/obj/Debug/net6.0/DisconnectedApp.csproj.AssemblyReference.cache
+/home/coder/project/workspace/DisconnectedApp/obj/Debug/net6.0/DisconnectedApp.GeneratedMSBuildEditorConfig.editorconfig
+/home/coder/project/workspace/DisconnectedApp/obj/Debug/net6.0/DisconnectedApp.AssemblyInfoInputs.cache
+/home/coder/project/workspace/DisconnectedApp/obj/Debug/net6.0/DisconnectedApp.AssemblyInfo.cs
+/home/coder/project/workspace/DisconnectedApp/obj/Debug/net6.0/DisconnectedApp.csproj.CoreCompileInputs.cache

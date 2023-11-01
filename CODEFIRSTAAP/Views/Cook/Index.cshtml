@@ -1,0 +1,27 @@
+@model IEnumerable<CODEFIRSTAAP.Models.Book>
+ 
+    <h1>All Books</h1>
+    <h5>Total Number of Books is: @ViewBag.message</h5>
+    <a href="/Book/Create">Add Books Details</a>
+    <table class="table table-striped">
+        <tr>
+            <th>@Html.DisplayNameFor(model=>model.BookId)</th>
+            <th>@Html.DisplayNameFor(model=>model.BookName)</th>
+           
+            <th>@Html.DisplayNameFor(model=>model.Price)</th>
+            <th>@Html.DisplayNameFor(model=>model.Quantity)</th>
+        </tr>
+ 
+        <tbody>
+            @foreach(var items in Model)
+            {
+                <tr>
+                    <td>@items.BookId</td>
+                    <td>@items.BookName</td>
+                  
+                    <td>@items.Price</td>
+                    <td>@items.Quantity</td>
+                </tr>
+            }
+        </tbody>  
+    </table>

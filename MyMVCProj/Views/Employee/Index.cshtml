@@ -1,0 +1,31 @@
+@model IEnumerable<MyMVCProj.Data.Employee>
+    <h4>Employee Deatails</h4>
+
+    <p>No. of Employees: @ViewBag.count</p>
+    <p>Maximum Salary : @ViewBag.maxsalary</p>
+    <hr/>
+    <table class="table">
+        <tr>
+            <th>@Html.DisplayNameFor(model=>model.EmployeeId)</th>
+            <th>@Html.DisplayNameFor(model=>model.EmployeeName)</th>
+            <th>@Html.DisplayNameFor(model=>model.Department.DepartmentName)</th>
+            <th>@Html.DisplayNameFor(model=>model.Salary)</th>
+            <th>@Html.DisplayNameFor(model=>model.JoinDate)</th>
+        </tr>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td> @item.EmployeeId</td>
+                    <td> @item.EmployeeName</td>
+                    <td> @item.Department.DepartmentName</td>
+                    <td> @item.Salary</td>
+                    <td> @item.JoinDate</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id=@item.EmployeeId>Edit</a>
+                        @Html.ActionLink("Delete", "Delete", new{id=item.EmployeeId})
+                    </td>
+                </tr>    
+            }
+        </tbody>    
+    </table>

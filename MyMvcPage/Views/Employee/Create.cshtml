@@ -1,0 +1,34 @@
+
+@model MyMvcPage.Models.Employee
+
+<form method="post" action="/Employee/Create">
+<br /><Br />
+<label>Employee Id</label><br />
+<input  asp-for="EmployeeId"/>
+<br /><Br />
+<label>Employee Name</label><br />
+<input  asp-for="EmployeeName"/>
+<br /><Br />
+
+<label>Department Id</label><br />
+<select asp-for="DepartmentId" asp-items="ViewBag.Data">
+@* <option value="1">Finance</option>,
+<option value="1">Sales</option>,
+<option value="1">Production</option>  //hard codding value in form of list  *@
+
+</select> 
+<br /><Br />
+<label>Salary</label><br />
+<input  asp-for="Salary"/>
+<br /><Br />
+<label>JoinDate</label><br />
+<input  asp-for="JoinDate"/>
+<br /><Br />
+<label>Is Regular ?</label><br />
+<input  asp-for="IsRegular"/>
+<br /><Br />
+<input type="submit" value="Send Data"/>
+</br />
+@ViewBag.message
+
+</form>

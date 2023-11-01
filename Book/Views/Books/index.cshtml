@@ -1,0 +1,28 @@
+
+@using Book.Models;
+
+
+<h1>ALL BOOKS</h1>
+<p>Total Number of Books : @ViewBag.Count</p>
+<hr> <br>
+<table class="table table-striped">
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Price</th>
+        <th>Quantity</th>
+    </tr>
+ 
+    @foreach (var i in Model)
+    {
+        <tr>
+            <td>@i.Id</td>
+            <td>@i.Title</td>
+            <td>@i.Author</td>
+            <td>@i.Price</td>
+            <td>@i.Quantity</td>
+        </tr>
+    }
+ 
+</table>

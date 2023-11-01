@@ -1,0 +1,26 @@
+@model BLood.Models.BloodDonor
+@using (Html.BeginForm())
+{
+    @* <div>
+        @Html.DisplayNameFor(m=>m.ID)
+        //@Html.EditorFor(m=>m.ID)
+    </div> *@
+    <div>
+        @Html.DisplayNameFor(m=>m.Name)
+        @Html.EditorFor(m=>m.Name)
+    </div>
+     <div>
+        @Html.DisplayNameFor(m=>m.Age)
+        @Html.EditorFor(m=>m.Age)
+    </div>
+    <div>
+        @Html.DisplayNameFor(m=>m.BloodGroup)
+        @Html.EditorFor(m=>m.BloodGroup)
+    </div>
+     <div>
+        @Html.DisplayNameFor(m=>m.DOB)
+        @Html.EditorFor(m=>m.DOB)
+    </div>
+    <input type="submit" value="Add Donor"/>
+    <br>
+}

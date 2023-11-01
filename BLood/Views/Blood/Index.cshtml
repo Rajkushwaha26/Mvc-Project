@@ -1,0 +1,29 @@
+@model IEnumerable<BLood.Models.BloodDonor>
+    <h1>All Donor</h1>
+    <h4>Total number of Donor</h4>
+    <table class="table">
+        <tr>
+            <th>@Html.DisplayNameFor(m=>m.ID)</th>
+            <th>@Html.DisplayNameFor(m=>m.Name)</th>
+            <th>@Html.DisplayNameFor(m=>m.Age)</th>
+            <th>@Html.DisplayNameFor(m=>m.BloodGroup)</th>
+            <th>@Html.DisplayNameFor(m=>m.DOB)</th>
+        </tr>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.ID</td>
+                    <td>@item.Name
+                    <td>@item.Age</td>
+                    <td>@item.BloodGroup</td>
+                    <td>@item.DOB</td>
+                    
+                    <td><a asp-controller="Blood" asp-action="Edit" asp-route-id="@item.ID"/>Edit</td>
+                    <td><a asp-controller="Blood" asp-action="Delete" asp-route-id="@item.ID"/>Delete</td>
+                </tr>
+                
+            }
+        </tbody>
+    </table>
+    @Html.ActionLink("Add BloodDonor","Create","Blood")

@@ -1,0 +1,76 @@
+﻿
+@model IEnumerable<MyMvcApp.Models.Employee>
+
+
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+<style></style>
+    
+    
+  
+   
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+//
+@{
+   int [] arr = new int []{10,20,31,57,81,99};
+    foreach (var i in arr)
+
+    {
+        if(@i%2==1)
+        {
+        @i<br/>
+        }
+    }
+}        
+
+        
+    @* <a href = "~/Home/Content">Content Result</a><br>
+     <a href = "~/Home/Redirect">Redirect to Mail</a><br>
+      <a href = "~/Home/Json">JSON result</a><br>
+       <a class ="btn btn-info "a href = "~/Home/FileDownload">Download File</a><br> *@
+
+      @* <p>
+    Message is : @ViewData["message"]
+     <br>
+    Message 2 is: @ViewBag.message2
+    </p> 
+
+    @{
+        foreach(var name in ViewBag.NamesList){
+            @name<br>
+        }
+    }
+
+    <div>
+        <p>@Model.EmployeeId</p>
+        <p>@Model.EmployeeNmae</p>
+        <p>@Model.Salary</p>
+        <p>@Model.JoinDate</p>
+
+     
+    </div>//losely thpe view *@
+
+    <table class = "table-table-striped">
+        @foreach (var emp in Model)
+        {
+            <tr>
+            <td>@emp.EmployeeId</td>
+            <td>@emp.EmployeeName</td>
+            <td>@emp.Salary</td>
+            <td>@emp.joinDate</td>
+
+            </tr>
+            
+        }
+      
+    </table>
+
+    
+
