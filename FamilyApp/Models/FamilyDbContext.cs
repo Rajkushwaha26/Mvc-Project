@@ -8,6 +8,7 @@ namespace FamilyApp.Models
 {
     public class FamilyDbContext : DbContext
     {
+        public 
         
         public virtual DbSet<BloodDonor>BloodDonors {set;get;}
         

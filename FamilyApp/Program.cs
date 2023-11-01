@@ -3,6 +3,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddDbContext<FamilyDbContext>(OptionsBuilderConfigurationExtensions=>{
+    OptionsBuilderConfigurationExtensions.UseSqlServer(builder.Configuration.GetConnectionString("FamilyConnection"));
+
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
