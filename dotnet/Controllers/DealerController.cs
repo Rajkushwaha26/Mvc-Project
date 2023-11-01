@@ -13,7 +13,10 @@ namespace dotnet.Controllers
     
     public class DealerController : Controller
     {
-        ApplicationDbContext db = new ApplicationDbContext();
+        ApplicationDbContext db ;
+        public DealerController(ApplicationDbContext context){
+            
+        }
 
         public IActionResult Index()
         {
