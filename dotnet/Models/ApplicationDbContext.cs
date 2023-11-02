@@ -12,10 +12,10 @@ namespace dotnet.Models
         {
 
         }
-        protected override void OnConfiguring(DbContextOptionsBuilder options)
-        {
-            options.UseSqlServer("User ID=sa;password=examlyMssql@123;server=localhost;Database=DonorDb;trusted_connection=false;Persist Security Info=false;Encrypt=false");
-        }
+        // protected override void OnConfiguring(DbContextOptionsBuilder options)
+        // {
+        //     options.UseSqlServer("User ID=sa;password=examlyMssql@123;server=localhost;Database=DonorDb;trusted_connection=false;Persist Security Info=false;Encrypt=false");
+        // }
         public virtual DbSet<Dealer>Dealers {set;get;}
     }
 }
