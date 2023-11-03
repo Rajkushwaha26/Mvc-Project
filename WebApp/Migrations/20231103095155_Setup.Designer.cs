@@ -12,7 +12,7 @@ using WebApp.Models;
 namespace WebApp.Migrations
 {
     [DbContext(typeof(EmployeeDbContext))]
-    [Migration("20231103092652_Setup")]
+    [Migration("20231103095155_Setup")]
     partial class Setup
     {
         /// <inheritdoc />
