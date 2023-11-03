@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace WebApp.Models
+namespace EmployeeApi.Models
 {
-    public class Designation
+    public class Department
     {
         
     }
