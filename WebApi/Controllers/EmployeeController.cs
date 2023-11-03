@@ -13,6 +13,7 @@ namespace WebApi.Controllers
     [Route("api/[controller]")]
     public class EmployeeController : ControllerBase
     {
+        ///////// STATIC DATA RUNING ONLINE DATA
         private static List<Employee> empList = new List<Employee>()
         {
             new Employee{EmployeeId = 101,EmployeeName = "Karan", Salary = 60000 },
@@ -21,11 +22,11 @@ namespace WebApi.Controllers
             new Employee{EmployeeId = 104,EmployeeName = "Rahul", Salary = 60000 },
         };
         [HttpGet]
-        // public IActionResult Get()
-        // {
-        //     var emp = empList;
-        //     return (emp);
-        // }
+        public IActionResult Get()
+        {
+            var emp = empList;
+            return Ok(emp);
+        }
         [HttpGet]
         [Route("{id}")]
         public IActionResult Get(int id)
