@@ -7,7 +7,7 @@ namespace WebApp.Models
 {
     public class Employee
     {
-        public int EmployeeId {set; get;} = 0;
+        public int EmployeeId {set; get;}
         public string? EmployeeName {set; get;}
         public int DepartmentId {set; get;}
         public decimal Salary {set; get;}
