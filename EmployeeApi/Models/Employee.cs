@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using EmployeeApi.Models;
 
 namespace EmployeeApi.Models
 {
@@ -13,6 +14,6 @@ namespace EmployeeApi.Models
         public decimal Salary {set; get;}
         public DateTime JoinDate {set; get;}
         public virtual Department? Department {set; get;}
-        public virtual Designation? Designation {set;get;}
+        public virtual Degination? Degination {set;get;}
     }
 }
