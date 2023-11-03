@@ -5,11 +5,13 @@ using System.Threading.Tasks;
 
 namespace WebApi.Models
 {
-    public class ApplicationDbContext
+    public class ApplicationDbContext : DbContext
     {
-        public int DepartmentId { get; set; }
-        public string DepartmentName { get; set; }
-        public DateTime Joindate { get; set; }
-        public int MyProperty { get; set; }
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options): base(options){
+
+        }
+        public DbSet <Employee>Employees {get;set;}
+        public DbSet<Department>Departments {get;set;}
+        public DbSet<Designation>Designations{get;set;}
     }
 }
