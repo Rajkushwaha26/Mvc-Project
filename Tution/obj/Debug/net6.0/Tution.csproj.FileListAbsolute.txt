@@ -1,0 +1,8 @@
+/home/coder/project/workspace/Tution/obj/Debug/net6.0/Tution.csproj.AssemblyReference.cache
+/home/coder/project/workspace/Tution/obj/Debug/net6.0/Tution.GeneratedMSBuildEditorConfig.editorconfig
+/home/coder/project/workspace/Tution/obj/Debug/net6.0/Tution.AssemblyInfoInputs.cache
+/home/coder/project/workspace/Tution/obj/Debug/net6.0/Tution.AssemblyInfo.cs
+/home/coder/project/workspace/Tution/obj/Debug/net6.0/Tution.csproj.CoreCompileInputs.cache
+/home/coder/project/workspace/Tution/obj/Debug/net6.0/Tution.MvcApplicationPartsAssemblyInfo.cache
+/home/coder/project/workspace/Tution/obj/Debug/net6.0/Tution.RazorAssemblyInfo.cache
+/home/coder/project/workspace/Tution/obj/Debug/net6.0/Tution.RazorAssemblyInfo.cs

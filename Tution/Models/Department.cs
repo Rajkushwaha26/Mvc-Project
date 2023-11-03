@@ -7,9 +7,9 @@ namespace Tution.Models
 {
     public class Course
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public DateTime JoinDate { get; set; }
-        public string Discrption { get; set; }
+        public int DepartmentIdId { get; set; }
+        public string DeapartmentName { get; set; }
+        public virtual ICollection <Employee>? Employees {get;set;}
+        
     }
 }
