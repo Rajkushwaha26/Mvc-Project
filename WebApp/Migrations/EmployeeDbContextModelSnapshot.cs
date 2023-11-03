@@ -94,11 +94,13 @@ namespace WebApp.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("WebApp.Models.Designation", null)
+                    b.HasOne("WebApp.Models.Designation", "Designation")
                         .WithMany("Employees")
                         .HasForeignKey("DesignationId");
 
                     b.Navigation("Department");
+
+                    b.Navigation("Designation");
                 });
 
             modelBuilder.Entity("WebApp.Models.Department", b =>

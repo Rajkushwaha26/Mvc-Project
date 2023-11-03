@@ -13,6 +13,6 @@ namespace WebApp.Models
         public decimal Salary {set; get;}
         public DateTime JoinDate {set; get;}
         public virtual Department? Department {set; get;}
-        public virtual Designation> 
+        public virtual Designation? Designation {set;get;}
     }
 }
