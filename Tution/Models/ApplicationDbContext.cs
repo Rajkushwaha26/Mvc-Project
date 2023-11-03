@@ -14,7 +14,9 @@ namespace Tution.Models
         public ApplicationDbContext (DbContextOptions <ApplicationDbContext> options) : base(options){
 
         }
-        protected override void OnConfiguration()
-        
+        protected override void OnConfiguration(DbContextOptionsBuilder options){
+            options.UseSqlServer("User ID=sa;server=localhost; database=StudentDB;password=examlyMyssql@123;trusted_connection=false;Persist Security Info=false;")
+        }
+        public virtual 
     }
 }
