@@ -7,6 +7,8 @@ namespace WebApp.Models
 {
     public class Designation
     {
-        
+        public int DesignationId { get; set; }
+        public int DesignationName { get; set; }
+        public ICollection<Employee> Employees { get; set; }
     }
 }
