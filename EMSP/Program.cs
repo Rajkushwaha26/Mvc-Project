@@ -16,6 +16,8 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+builder.Services.Transient<IDept,DepartmentRepository>();
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
