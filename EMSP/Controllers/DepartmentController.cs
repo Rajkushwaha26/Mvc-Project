@@ -11,10 +11,14 @@ namespace EMSP.Controllers
     //[Route("[controller]")]
     public class DepartmentController : ControllerBase
     {
-        public DepartmentController(IDept_repo){
+        public DepartmentController(IDecrementOperators _repo){
             this.repo=_repo;
         }
-        
+        [HttpPost]
+        public IActionResult GetDept(){
+            var data = repo.GetDepartments();
+            return Ok(data);
+        }
         
 
        
