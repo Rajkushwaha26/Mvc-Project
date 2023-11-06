@@ -9,14 +9,15 @@ using Microsoft.Extensions.Logging;
 namespace EMSP.Controllers
 {
     //[Route("[controller]")]
-    public class DepartmentController : Controller
+    public class DepartmentController : ControllerBase
     {
-        private readonly ILogger<DepartmentController> _logger;
-
-        public DepartmentController(ILogger<DepartmentController> logger)
-        {
-            _logger = logger;
+        public DepartmentController(IDept_repo){
+            this.repo=_repo;
         }
+        
+        
+
+       
 
         public IActionResult Index()
         {
