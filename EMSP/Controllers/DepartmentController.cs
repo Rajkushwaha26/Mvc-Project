@@ -43,6 +43,7 @@ namespace EMSP.Controllers
         [Route("ListDept/(id)")]
         public IActionResult GetDept(int id)
         {
+            var data=repo.FindDept(id);
             return Ok(data);
         }
 
@@ -50,7 +51,8 @@ namespace EMSP.Controllers
         [Route("ListDept/(id)")]
         public IActionResult PutDept(int id, Department department)
         {
-            return Ok(data);
+            repo.EditDept(department);
+            return Ok();
         }
         
     }

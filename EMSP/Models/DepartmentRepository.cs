@@ -23,7 +23,7 @@ namespace EMSP.Models
         public void EditDept(Department dept){
             Department department = db.Departments.Find(dept.Id);
             department.Name = dept.Name;
-            db.SaveCahnges();
+            db.SaveChanges();
             
         }
         public Department FindDept(int id){
