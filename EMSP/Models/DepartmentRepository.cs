@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using EMSP.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace EMSP.Models
 {
@@ -19,7 +21,7 @@ namespace EMSP.Models
             db.SaveChanges();
         }
         public void EditDept(Department dept){
-            Department department = db.Departments.Find(id);
+            Department department = db.Departments.Find(dept.Id);
             department.Name = dept.Name;
             db.SaveCahnges();
             

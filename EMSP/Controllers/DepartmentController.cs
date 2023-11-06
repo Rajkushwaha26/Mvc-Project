@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using E
+using EMSP.Models;
 
 
 namespace EMSP.Controllers
@@ -14,38 +14,44 @@ namespace EMSP.Controllers
     public class DepartmentController : ControllerBase
     {
         IDept repo;
-        public DepartmentController(IDept _repo){
+        public DepartmentController(IDept _repo)
+        {
             this.repo=_repo;
         }
+
         [HttpPost]
         [Route("ListDept")]
-        public IActionResult GetDept(){
+        public IActionResult GetDept()
+        {
             var data = repo.GetDepartments();
             return Ok(data);
         }
 
         [HttpPost]
         [Route("Create")]
-        public IActionResult PostDept(DepartmentController department){
-            if(ModelState.IsValid){
+        public IActionResult PostDept(Department department)
+        {
+            if(ModelState.IsValid)
+            {
                 repo.AddDept(department);
-                return Created("Record Added");
+                return Created("Record Added",department);
             }
             return BadRequest();
         }
+
+        [HttpGet]
+        [Route("ListDept/(id)")]
+        public IActionResult GetDept(int id)
+        {
+            return Ok(data);
+        }
+
+         [HttpPut]
+        [Route("ListDept/(id)")]
+        public IActionResult PutDept(int id, Department department)
+        {
+            return Ok(data);
+        }
         
-
-       
-
-        public IActionResult Index()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View("Error!");
-        }
     }
 }
