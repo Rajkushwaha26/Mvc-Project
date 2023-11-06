@@ -10,6 +10,8 @@ namespace EMSP.Models
         List<Department> GetDepartments();
         Department FindDept(int id);
         void AddDept(Department dept);
-        void EditDept()
+        void EditDept(Department dept);
+        void DeleteDept(Department dept);
+
     }
 }
