@@ -44,4 +44,14 @@ public class Tests
             program.ThrowDivideByZeroExceptionMethod();
         });
     }
+
+
+    
+
+    [Test]
+    public void Test4()
+    {
+        StringAssert.Contains("Demo", program.GetMyName("demothree"));
+    }
+        
 }

@@ -19,6 +19,10 @@ namespace DemoSolutions{
     public void ThrowDivideByZeroExceptionMethod(){
         throw new System.DivideByZeroException ("Divide by zero");
     }
+
+    public string GetMyName(string str){
+        return str;
+    }
     
     }
 }
