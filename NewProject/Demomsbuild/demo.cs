@@ -7,8 +7,6 @@ namespace NewProject.Demomsbuild
 {
     public class demo
     {
-        public static void Main(string[] args){
-            Console.WriteLine("Helo World");
-        }
+        
     }
 }

@@ -1,0 +1,5 @@
+/home/coder/project/workspace/NewProject/Demomsbuild/obj/Debug/net6.0/Demomsbuild.csproj.AssemblyReference.cache
+/home/coder/project/workspace/NewProject/Demomsbuild/obj/Debug/net6.0/Demomsbuild.GeneratedMSBuildEditorConfig.editorconfig
+/home/coder/project/workspace/NewProject/Demomsbuild/obj/Debug/net6.0/Demomsbuild.AssemblyInfoInputs.cache
+/home/coder/project/workspace/NewProject/Demomsbuild/obj/Debug/net6.0/Demomsbuild.AssemblyInfo.cs
+/home/coder/project/workspace/NewProject/Demomsbuild/obj/Debug/net6.0/Demomsbuild.csproj.CoreCompileInputs.cache

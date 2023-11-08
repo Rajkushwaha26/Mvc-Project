@@ -1,11 +1,11 @@
-<Project>
+<Project Sdk="Microsoft.NET.Sdk">
 
-<ProjectGroup>
-
-
+<PropertyGroup>
 <TargetFramework>net6.0</TargetFramework>
-
-</ProjectGroup>
+<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+<OutputPath>Bin</OutputPath>
+<OutputType>Exe</OutputType>
+</PropertyGroup>
 
 <ItemGroup>
 <Complie Include="program.cs"></Complie>
