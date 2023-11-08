@@ -1,3 +1,4 @@
+using DemoSolutions;
 namespace DemoSolutions.Test;
 
 public class Tests
@@ -10,6 +11,8 @@ public class Tests
     [Test]
     public void Test1()
     {
+        Program program = new Program();
+        var value = program.Demo();
         Assert.Pass();
     }
 }
