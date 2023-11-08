@@ -5,6 +5,8 @@
 <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
 <OutputPath>Bin</OutputPath>
 <OutputType>Exe</OutputType>
+
+
 <!-- <OutputType>Exe</OutputType>
 <AssemlyName>Hello Raj</AssemlyName> -->
 </PropertyGroup>
@@ -14,7 +16,14 @@
 </ItemGroup>
 
 <Target Name="Build">
-<Csc Source="@(Compile)"></Csc>
+<MakeDir Directories = "$(OutputPath)" Condition="!Exits('$(OutputPath)')"/>
+<Csc Source="@(Compile)" OutputAssembly="$(OutputPath)$(AssemblyName).exe"></Csc>
+</Target>
+<Target Name="Clean">
+<Delete Files = " $(OutputPath)$(AssemlyName).exe"/>
+</Target>
+
+<Target Name = "Rebuild" DependsOnTargets = "Build;Clean">
 </Target>
 
 </Project>
