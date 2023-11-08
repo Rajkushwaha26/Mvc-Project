@@ -5,10 +5,12 @@
 <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
 <OutputPath>Bin</OutputPath>
 <OutputType>Exe</OutputType>
+<!-- <OutputType>Exe</OutputType>
+<AssemlyName>Hello Raj</AssemlyName> -->
 </PropertyGroup>
 
 <ItemGroup>
-<Complie Include="program.cs"></Complie>
+<Compile Include="Program.cs"></Compile>
 </ItemGroup>
 
 <Target Name="Build">

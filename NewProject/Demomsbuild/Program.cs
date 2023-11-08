@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace NewProject.Demomsbuild
+namespace Demomsbuild
 {
     public class Program
     {
         public static void Main(string[] args){
-            Console.WriteLine("Helo");
+            Console.WriteLine("Hello raj");
         }
     }
 }
