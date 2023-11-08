@@ -3,9 +3,11 @@ namespace DemoSolutions.Test;
 
 public class Tests
 {
+    Program program= null;
     [SetUp]
     public void Setup()
     {
+        program = new Program();
     }
 
     [Test]
@@ -24,12 +26,22 @@ public class Tests
         Assert.IsTrue(value);
         
     }
-    [TearUp]
-    public void Up()
-    {
 
+    // [TearUp]
+    // public void Up()
+    // {
+
+    // }
+
+    // [TearDown]
+    // public void Down(){
+
+    // }
+
+    [Test]
+    public void Test3(){
+        Assert.Throws<System.DivideByZeroException>(()=>{
+            program.ThrowDivideByZeroExceptionMethod();
+        });
     }
-
-    [TearDown]
-    public void Down()
 }

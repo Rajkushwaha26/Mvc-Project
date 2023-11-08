@@ -15,6 +15,10 @@ namespace DemoSolutions{
     public static bool IsOk(){
         return false;
     }
+
+    public void ThrowDivideByZeroExceptionMethod(){
+        throw new System.DivideByZeroException ("Divide by zero");
+    }
     
     }
 }
