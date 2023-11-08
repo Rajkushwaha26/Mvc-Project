@@ -24,6 +24,12 @@ public class WeatherForecastController : ControllerBase
         return 0;
     }
 
+    
+    [HttpPut]
+     public string DemoTest(IDisposable dispose){
+      return "disposed";
+     }
+
     [HttpGet(Name = "GetWeatherForecast")]
     public IEnumerable<WeatherForecast> Get()
     {

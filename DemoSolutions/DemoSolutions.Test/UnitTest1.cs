@@ -91,7 +91,14 @@ public class Tests
     [Description("Testing the default value for post data")]
     public void Test5(){
         var value=controllerforecast.PostData();
-        Assert.That(value, IsEqual(0));
+        Assert.That(value, Is.EqualTo(0));
+    }
+
+    public void  Test6(){
+        Dispossible  id = new Dispossible();
+        string value = controllerforecast.DemoTest(id);
+        StringAssert .Contains("Idispose",value);
+
     }
         
 }
