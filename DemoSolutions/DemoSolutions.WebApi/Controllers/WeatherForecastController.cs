@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+
 
 namespace DemoSolutions.WebApi.Controllers;
 
@@ -16,6 +18,10 @@ public class WeatherForecastController : ControllerBase
     public WeatherForecastController(ILogger<WeatherForecastController> logger)
     {
         _logger = logger;
+    }
+    [HttpPost]
+    public int PostData(){
+        return 0;
     }
 
     [HttpGet(Name = "GetWeatherForecast")]

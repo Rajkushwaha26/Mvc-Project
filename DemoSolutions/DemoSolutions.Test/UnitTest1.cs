@@ -1,6 +1,7 @@
-//using DemoSolutions;
+using DemoSolutions;
 using DemoSolutions.WebApi.Controllers;
 namespace DemoSolutions.Test;
+using Microsoft.Extensions.Logging;
 
  class Dispossible : IDisposable
     {
@@ -33,11 +34,12 @@ public class Tests
     
     Program program= null;
 
-    WeatherForcasteController controllerforecast = null;
+   WeatherForecastController controllerforecast = null;
     [SetUp]
     public void Setup()
     {
         program = new Program();
+        controllerforecast = new WeatherForecastController(new MockObject());
     }
 
     [Test]
@@ -82,6 +84,14 @@ public class Tests
     public void Test4()
     {
         StringAssert.Contains("Demo", program.GetMyName("demothree"));
+    }
+
+    [Test]
+    [Author("Green Tester")]
+    [Description("Testing the default value for post data")]
+    public void Test5(){
+        var value=controllerforecast.PostData();
+        Assert.That(value, IsEqual(0));
     }
         
 }
