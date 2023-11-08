@@ -1,0 +1,18 @@
+<Project>
+
+<ProjectGroup>
+
+
+<TargetFramework>net6.0</TargetFramework>
+
+</ProjectGroup>
+
+<ItemGroup>
+<Complie Include="program.cs"></Complie>
+</ItemGroup>
+
+<Target Name="Build">
+<Csc Source="@(Compile)"></Csc>
+</Target>
+
+</Project>
