@@ -100,5 +100,11 @@ public class Tests
         StringAssert .Contains("Idispose",value);
 
     }
+
+    public void Test6(){
+        var mock = new Mock<IDisposable>();
+        var data = mock.Object;
+        Assert.That("disposed",Is.EqualTo(controllerforecast.DemoTest(data)));
+    }
         
 }
