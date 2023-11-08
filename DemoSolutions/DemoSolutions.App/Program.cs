@@ -11,6 +11,11 @@ namespace DemoSolutions{
     public int Demo(){
         return 100;
     }
+
+    public static bool IsOk(){
+        return false;
+    }
+    
     }
 }
 
