@@ -6,7 +6,9 @@ import {Component} from "@angular/core";
 })
 export class FirstComponent
 {
-    c
+    doesExists=true;
+    values="save";
+    colorStyle:string = "color:blue;";
     greet:string= "Hello";
     twowayvariavle:string="Default value";
 
