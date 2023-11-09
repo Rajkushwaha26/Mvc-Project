@@ -6,5 +6,12 @@ import {Component} from "@angular/core";
 })
 export class FirstComponent
 {
+    c
     greet:string= "Hello";
+    twowayvariavle:string="Default value";
+
+    save(event){
+        console.log(event.target.value)
+    }
+
 }
