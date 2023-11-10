@@ -4,8 +4,12 @@
         </li>
 </ol> -->
 
-<table>
-    <tr *ngFor="let name in "></tr>
+<table class="table">
+    <tr *ngFor="let name of names">
+        <td>{{name.fname}}</td>
+        <td>{{name.lname}}</td>
+        <td>{{name.email}}</td>
+    </tr>
 </table>
 
 

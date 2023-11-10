@@ -8,7 +8,7 @@ export class FirstComponent
 {
     //name:string[]=["Ragav","Rohan","Ritu","Rahul"]
 
-    names:objects[]=[
+    names:object[]=[
         {fname:'Raghav',lname:'Chohan',email:'A@gmail.com'},
         {fname:'Rohit',lname:'Pal',email:'Abjg@gmail.com'},
         {fname:'Raj',lname:'Kumar',email:'guguA@gmail.com'},
