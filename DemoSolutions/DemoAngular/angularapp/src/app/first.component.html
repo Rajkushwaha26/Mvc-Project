@@ -4,12 +4,25 @@
         </li>
 </ol> -->
 
-<table class="table">
-    <tr *ngFor="let name of names">
-        <td>{{name.fname}}</td>
-        <td>{{name.lname}}</td>
-        <td>{{name.email}}</td>
+<table class="table" >
+    <h2>Details</h2>
+    <tr>
+        <th class="table-secondary">FirstName</th>
+        <th class="table-primary">FirstName</th>
+        <th class="table-success">Email</th>
+
     </tr>
+    <tbody>
+
+        <tr *ngFor="let name of names">
+            <td class="table-primary">{{name.fname}}</td>
+            <td class="table-secondary">{{name.lname}}</td>
+            <td class="table-success">{{name.email}}</td>
+        </tr>
+        
+
+
+    </tbody>
 </table>
 
 
