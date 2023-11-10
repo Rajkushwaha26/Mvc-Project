@@ -6,7 +6,16 @@ import {Component} from "@angular/core";
 })
 export class FirstComponent
 {
-    doesExists=true;
+    //name:string[]=["Ragav","Rohan","Ritu","Rahul"]
+
+    names:objects[]=[
+        {fname:'Raghav',lname:'Chohan',email:'A@gmail.com'},
+        {fname:'Rohit',lname:'Pal',email:'Abjg@gmail.com'},
+        {fname:'Raj',lname:'Kumar',email:'guguA@gmail.com'},
+        {fname:'Ritu',lname:'Singh',email:'hA@gmail.com'}
+    ]
+
+    //doesExists=true;
     values="save";
     colorStyle:string = "color:blue;";
     greet:string= "Hello";
