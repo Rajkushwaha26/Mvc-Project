@@ -13,7 +13,8 @@ import { Component, OnInit } from '@angular/core';
   <h2>{{mesaage | titlecase}}</h2>
   <h2>{{name | slice:3:7}}</h2>
   
- <h1>{{date | date:'shortDate'}}</
+ <h3>{{date | date:'shortDate'}}</h3>
+ <h3>{{date | date: 'shortTime'}}</h3>
   
   
 
@@ -33,6 +34,7 @@ export class TestComponent implements OnInit {
   public message ="Welcome to Codeworld";
   public myId = "testId";
   public isDisabled=false;
+  public date = new Date();
 
   constructor() { }
 
