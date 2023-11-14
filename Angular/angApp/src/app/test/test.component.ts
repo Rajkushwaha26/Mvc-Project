@@ -3,9 +3,9 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-test',
   template:`
-  <h2>
+  <h1>
     Welcome To {{name}}
-  </h2>
+  </h1>
   <h3>{{2+2}}</h3>
   
  
