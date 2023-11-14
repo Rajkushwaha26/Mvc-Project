@@ -8,12 +8,17 @@ import { Component, OnInit } from '@angular/core';
   </h2>
   <h3>{{2+2}}</h3>
   
-  <input [id]="myId" type="text" value="Vishwas">
-  <input [disabled]="isDisabled" id="{{myId}}" type ="text" value="Vishwas">
+ 
+  
+  <input #myInput type = "text">
+  <button (click)="logMessage(myInput.value)">Submit</button>
+
   
   
   
   `,
+   // <input [id]="myId" type="text" value="Vishwas">
+  // <input [disabled]="isDisabled" id="{{myId}}" type ="text" value="Vishwas">
   styles:[]
 })
 export class TestComponent implements OnInit {
@@ -26,6 +31,10 @@ export class TestComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  logMessage(value){
+    console.log(value);
   }
 
 }
