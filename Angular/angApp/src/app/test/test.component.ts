@@ -46,3 +46,6 @@ export class TestComponent implements OnInit {
   }
 
 }
+export class Sorry implements OnInit{
+  
+}
