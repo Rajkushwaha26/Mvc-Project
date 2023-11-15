@@ -1,16 +1,20 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute,Route, } from '@angular/router';
+import { ActivatedRoute,Route,Params } from '@angular/router';
 
 @Component({
   selector: 'DemoRoot',
   template: `<h1>Hello to Salonga</h1>`,
   styleUrls: ['./demo.component.css']
 })
-export class DemoRoot implements OnInit {
+export class DemoRoot  {
 
-  constructor() { }
+  constructor(private activateRoute:ActivatedRoute) {
+    console.log(activateRoute.snapshot.paramMap.get('id'));
+   }
 
-  ngOnInit() {
-  }
+
+  ngOnDestory() {
+    console.log("Destroy")
+  };
 
 }
