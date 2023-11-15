@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ActivatedRoute,Route,Params, Router } from '@angular/router';
+import { HelloworldService } from '../service-utilies/helloworld.service';
 
 @Component({
   selector: 'DemoRoot',
@@ -9,16 +10,14 @@ import { ActivatedRoute,Route,Params, Router } from '@angular/router';
 })
 export class DemoRoot  {
 
-  constructor(private route:Router) {
+  constructor(private route:Router, private hello:HelloworldService) {
     //console.log(activateRoute.snapshot.paramMap.get('id'));
    }
-  // handleRoute(){
-  //   this.route.navigate(["/form",23])
-  // }
-
-  ngOnDestory() {
-    console.log("Destroy");
+  handleRoute(){
+    this.route.navigate(["/form",23])
   }
+
+ 
 
  
 

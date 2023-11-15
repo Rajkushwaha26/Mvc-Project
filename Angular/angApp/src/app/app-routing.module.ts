@@ -5,8 +5,10 @@ import {TestComponent} from './test/test.component';
 
 
 
-const routes: Routes = [{path:'',component:DemoRoot},
+const routes: Routes = [
+  {path:'',component:DemoRoot},
 {path:'form/:id',component:TestComponent}
+
 ];
 
 @NgModule({
