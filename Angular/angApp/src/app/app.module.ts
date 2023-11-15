@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
 import { EmployeeListComponent } from './Employee/employee-list.component';
 import {  DemoRoot } from './demo/demo.component';
-
+import {  HelloworldService } from './service-utilies/helloworld.service';
 
 @NgModule({
   declarations: [
@@ -14,12 +14,14 @@ import {  DemoRoot } from './demo/demo.component';
     TestComponent,
     EmployeeListComponent,
     DemoRoot
+  
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
   ],
-  providers: [],
+  providers: [HelloworldService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
