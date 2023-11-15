@@ -13,11 +13,12 @@ import {Component, OnInit}from '@angular/core';
 })
 
 export class EmployeeListComponent implements OnInit{
-    public employees={
-        {"id":1,"name":"Raj","age":22},
+    
+    public employees=[
+        {"id":1, "name":"Raj","age":22},
         {"id":2,"name":"Ritu","age":21},
         {"id":3,"name":"Rohit","age":26}
-    };
+    ];
     constructor(){}
 
     ngOnInit(){
