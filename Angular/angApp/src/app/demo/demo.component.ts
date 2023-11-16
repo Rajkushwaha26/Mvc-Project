@@ -5,7 +5,9 @@ import { HelloworldService } from '../service-utilies/helloworld.service';
 
 @Component({
   selector: 'DemoRoot',
-  template: `<h1>Hello to Salonga</h1><button type="button" (click)="handleRoute()">Navigate</button>`
+ //template: `<h1>Hello to Salonga</h1><button type="button" (click)="handleRoute()">Navigate</button>`,
+  templateUrl:'./test/test.component.html'
+  
   
 })
 export class DemoRoot  {

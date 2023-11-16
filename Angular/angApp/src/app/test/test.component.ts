@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-test',
+  // templateUrl:'./test/test.component.html',
+  styles:[],
   template:`
   <h1>
     I Am From {{name}}
@@ -16,17 +18,12 @@ import { Component, OnInit } from '@angular/core';
  <h3>{{date | date:'shortDate'}}</h3>
  <h3>{{date | date: 'shortTime'}}</h3>
   
-  
-
-  
-  
-  
-  `,
+ `
    // <input [id]="myId" type="text" value="Vishwas">
   // <input [disabled]="isDisabled" id="{{myId}}" type ="text" value="Vishwas">
   // <input #myInput type = "text">
   // <button (click)="logMessage(myInput.value)">Submit</button>
-  styles:[]
+  
 })
 export class TestComponent implements OnInit {
 

@@ -9,8 +9,8 @@ using WebApi.Models;
  
 namespace WebApi.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
+   // [ApiController]
+    //[Route("api/[controller]")]
     public class EmployeeController : ControllerBase
     {
         ///////// STATIC DATA RUNING ONLINE DATA

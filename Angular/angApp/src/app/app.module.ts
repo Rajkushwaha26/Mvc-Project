@@ -7,13 +7,16 @@ import { TestComponent } from './test/test.component';
 import { EmployeeListComponent } from './Employee/employee-list.component';
 import {  DemoRoot } from './demo/demo.component';
 import {  HelloworldService } from './service-utilies/helloworld.service';
+import {Guard} from './routerGuard.service';
+import {TokenDemo} from './tokenatziation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
     EmployeeListComponent,
-    DemoRoot
+    DemoRoot,
+    TokenDemo
   
   ],
   imports: [
@@ -21,7 +24,7 @@ import {  HelloworldService } from './service-utilies/helloworld.service';
     AppRoutingModule,
     
   ],
-  providers: [HelloworldService],
+  providers: [HelloworldService, Guard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
