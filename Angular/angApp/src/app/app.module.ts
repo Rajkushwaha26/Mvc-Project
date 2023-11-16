@@ -8,7 +8,8 @@ import { EmployeeListComponent } from './Employee/employee-list.component';
 import {  DemoRoot } from './demo/demo.component';
 import {  HelloworldService } from './service-utilies/helloworld.service';
 import {Guard} from './routerGuard.service';
-import {TokenDemo} from './tokenatziation.component';
+//import {TokenDemo} from './tokenatziation.component';
+import { Life } from './lifecycle.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {TokenDemo} from './tokenatziation.component';
     TestComponent,
     EmployeeListComponent,
     DemoRoot,
-    TokenDemo
+    // TokenDemo,
+    Life
   
   ],
   imports: [
