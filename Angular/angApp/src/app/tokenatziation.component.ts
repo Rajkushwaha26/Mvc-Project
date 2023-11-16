@@ -1,5 +1,5 @@
 import {Component} from "@angular/core";
-import {HttpClient} from "angular/common/http";
+import {HttpClient, HttpHeaders} from "@angular/common/http";
 import { error } from "console";
 
 @Component({
@@ -8,10 +8,12 @@ import { error } from "console";
 })
 
 export class TokenDemo
-{HttpHeaders= new HttpHeader
+{
+    _token:any=""
+
     constructor(private http:HttpClient)
     {
-        let httpheaders:HttpHeaders = new this.HttpHeaders
+        let httpheaders:HttpHeaders = new HttpHeaders
         ({
             Accept:'application/json'
         });

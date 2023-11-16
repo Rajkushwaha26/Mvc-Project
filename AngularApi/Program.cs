@@ -15,12 +15,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 IConfiguration cons=builder.Configuration;
 builder.Services.AddControllers();
-
+ var key=Encoding.UTF8.GetBytes(cons["JWT:Key"]);
 builder.Services.AddAuthentication(x=>{
     x.DefaultAuthenticateScheme=JwtBearerDefaults.AuthenticationScheme;
     x.DefaultChallengeScheme=JwtBearerDefaults.AuthenticationScheme;
 }).AddJwtBearer(token=>{
-    var key=Encoding.UTF8.GetBytes(cons["JWT:Key"]);
+   
     token.TokenValidationParameters=new TokenValidationParameters
     {
         ValidateIssuer=false,
