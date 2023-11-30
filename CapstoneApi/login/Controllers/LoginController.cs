@@ -8,8 +8,10 @@ namespace login.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class LogibController : ControllerBase
+    public class LoginController : ControllerBase
     {
-        
+        private ApplicationDbContext db;
+
+        public LoginController<ApplicationDbContext>()
     }
 }
