@@ -9,6 +9,7 @@ namespace dotnetapp.Models
 {
     public class OrderDetail
     {
+        [Key]
         public int OrderId { get; set; }
 
         [ForeignKey("UserId")]

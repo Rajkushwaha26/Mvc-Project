@@ -7,7 +7,8 @@ namespace dotnetapp.Models
 {
     public class Menu
     {
-        public int MenuItemId { get; set; }
+        //[Key]
+        public int MenuId { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public string Price { get; set; }

@@ -9,13 +9,14 @@ namespace dotnetapp.Models
 {
     public class CartItem
     {
+        [Key]
         public int CartItemId { get; set; }
 
         [ForeignKey("UserId")]
         public int UserId { get; set; }//FK
 
-        [ForeignKey("MenuItemId")]
-        public int MenuItemId { get; set; }//FK
+        [ForeignKey("MenuId")]
+        public int MenuIId { get; set; }//FK
         public int Quantity { get; set; }
     }
 }

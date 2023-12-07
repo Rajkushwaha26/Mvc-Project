@@ -9,6 +9,7 @@ namespace dotnetapp.Models
 {
     public class Payment
     {
+        [Key]
         public int PaymentId { get; set; }
 
         [ForeignKey("OrderId")]

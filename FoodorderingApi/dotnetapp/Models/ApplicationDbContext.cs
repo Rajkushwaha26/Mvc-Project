@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace dotnetapp.Models
 {
     public class ApplicationDbContext : DbContext
@@ -12,13 +13,13 @@ namespace dotnetapp.Models
 
         }
 
-        public DbSet<AddressDetail>AddressDetail {get;set;}
-        public DbSet<CartItem>CartItems {get;set;}
-        public DbSet<Menu>Menus {get;set;}
-        public DbSet<OrderDetail>OrderDetails {get;set;}
-        public DbSet<Payment>Payments {get;set;}
-        public DbSet<Role>Roles {get;set;}
-        public DbSet<User>Users {get;set;}
+        public virtual DbSet<AddressDetail>AddressDetail {get;set;}
+        public virtual DbSet<CartItem>CartItems {get;set;}
+        public virtual DbSet<Menu>Menus {get;set;}
+        public virtual DbSet<OrderDetail>OrderDetails {get;set;}
+        public virtual DbSet<Payment>Payments {get;set;}
+        public virtual DbSet<Role>Roles {get;set;}
+        public virtual DbSet<User>Users {get;set;}
         
     }
 }

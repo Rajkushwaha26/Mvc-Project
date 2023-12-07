@@ -9,6 +9,7 @@ namespace dotnetapp.Models
 {
     public class AddressDetail
     {
+        [Key]
         public int AddressId { get; set; }
 
         [ForeignKey("UserId")]

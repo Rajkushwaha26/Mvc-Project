@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using FoodorderingApi.Models;
+using dotnetapp.Models;
 
 using System.Buffers;
 
@@ -10,8 +10,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-builder.Services.AddDbContext<ApplicationDbcontext>(OperationStatus=>{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("OrderDB"));
+builder.Services.AddDbContext<ApplicationDbContext>(options=>{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Conn"));
 });
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
