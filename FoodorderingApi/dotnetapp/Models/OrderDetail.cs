@@ -13,7 +13,7 @@ namespace dotnetapp.Models
 
         [ForeignKey("UserId")]
         public int UserId { get; set; }//FK
-        public Date OrderDate { get; set; }
+        public date OrderDate { get; set; }
         public int TotalAmount { get; set; }
     }
 }
