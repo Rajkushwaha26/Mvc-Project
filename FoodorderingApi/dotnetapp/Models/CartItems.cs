@@ -8,8 +8,8 @@ namespace dotnetapp.Models
     public class CartItems
     {
         public int CartItemId { get; set; }
-        public int UserId { get; set; }
-        public int MenuItemId { get; set; }
+        public int UserId { get; set; }//FK
+        public int MenuItemId { get; set; }//FK
         public int Quantity { get; set; }
     }
 }

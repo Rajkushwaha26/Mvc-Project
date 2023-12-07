@@ -8,7 +8,7 @@ namespace dotnetapp.Models
     public class Payment
     {
         public int PaymentId { get; set; }
-        public int OrderId { get; set; }
+        public int OrderId { get; set; }//FK
         public Date PaymentDate { get; set; }
         public string Amount { get; set; }
         public string PaymentMethod { get; set; }

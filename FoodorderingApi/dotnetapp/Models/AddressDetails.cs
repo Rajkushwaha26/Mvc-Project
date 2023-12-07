@@ -8,7 +8,7 @@ namespace dotnetapp.Models
     public class AddressDetails
     {
         public int AddressId { get; set; }
-        public int UserId { get; set; }
+        public int UserId { get; set; }//FK
         public string Street { get; set; }
         public string City { get; set; }
         public string Pincode { get; set; }

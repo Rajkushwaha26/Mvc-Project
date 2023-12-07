@@ -7,7 +7,7 @@ namespace dotnetapp.Models
 {
     public class Role
     {
-        public int MyProperty { get; set; }
-        public int MyProperty { get; set; }
+        public int RoleId { get; set; }
+        public int RoleName { get; set; }
     }
 }
