@@ -13,13 +13,21 @@ namespace dotnetapp.Models
 
         }
 
-        public virtual DbSet<AddressDetail>AddressDetail {get;set;}
+        public virtual DbSet<AddressDetail>AddressDetails {get;set;}
+       // public virtual DbSet<AddressDetail>AddressDetail {get;set;}
+
         public virtual DbSet<CartItem>CartItems {get;set;}
+
         public virtual DbSet<Menu>Menus {get;set;}
+
         public virtual DbSet<OrderDetail>OrderDetails {get;set;}
+
         public virtual DbSet<Payment>Payments {get;set;}
+
         public virtual DbSet<Role>Roles {get;set;}
+
         public virtual DbSet<User>Users {get;set;}
+
         
     }
 }

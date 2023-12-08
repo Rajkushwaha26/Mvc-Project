@@ -11,13 +11,17 @@ namespace dotnetapp.Controllers
     [Route("api/[controller]")]
     public class OrderController : ControllerBase
     {
-        ApplicationDbContext db;
+        private readonly ApplicationDbContext db;
+
         public OrderController(ApplicationDbContext context){
             this.db=context;
         }
 
-        public IActionResult Get(){
-            var orderlist=
+        [HttpGet]
+        [Route("GetOrderDetail")]
+        public IActionResult GetOrderDetail(){
+            var orderlist=db.OrderDetails;
+            return Ok(orderlist);
         }
     }
 }
