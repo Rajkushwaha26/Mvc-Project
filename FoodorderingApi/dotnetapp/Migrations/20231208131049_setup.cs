@@ -10,7 +10,7 @@ namespace dotnetapp.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "AddressDetail",
+                name: "AddressDetails",
                 columns: table => new
                 {
                     AddressId = table.Column<int>(type: "int", nullable: false)
@@ -22,7 +22,7 @@ namespace dotnetapp.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_AddressDetail", x => x.AddressId);
+                    table.PrimaryKey("PK_AddressDetails", x => x.AddressId);
                 });
 
             migrationBuilder.CreateTable(
@@ -32,7 +32,7 @@ namespace dotnetapp.Migrations
                     CartItemId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     UserId = table.Column<int>(type: "int", nullable: false),
-                    MenuIId = table.Column<int>(type: "int", nullable: false),
+                    MenuId = table.Column<int>(type: "int", nullable: false),
                     Quantity = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -92,7 +92,7 @@ namespace dotnetapp.Migrations
                 {
                     RoleId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    RoleName = table.Column<int>(type: "int", nullable: false)
+                    RoleName = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -105,9 +105,9 @@ namespace dotnetapp.Migrations
                 {
                     UserId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    UserName = table.Column<int>(type: "int", nullable: false),
-                    Password = table.Column<int>(type: "int", nullable: false),
-                    Email = table.Column<int>(type: "int", nullable: false),
+                    UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     RoleId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -119,7 +119,7 @@ namespace dotnetapp.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "AddressDetail");
+                name: "AddressDetails");
 
             migrationBuilder.DropTable(
                 name: "CartItems");
