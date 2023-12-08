@@ -45,14 +45,21 @@ namespace dotnetapp.Controllers
                 return Ok();
             }
             else{
-                return NotFount("In Valid Input");
+                return NotFound("In Valid Input");
             }
         }
 
         [HttpDelete]
         [Route("DeleteMenu")]
         public IActionResult DeleteMenu(int id){
-            var menulist
+            var menulist=db.Menus.Find(id);
+            if(menulist!=null){
+                db.Menus.Remove(menulist);
+                db.SaveChanges();
+                return Ok();
+            }else{
+                return NotFound("Id Not Valid");
+            }
         }
 
 
