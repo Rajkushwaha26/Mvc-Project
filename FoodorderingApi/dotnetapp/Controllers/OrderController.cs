@@ -62,16 +62,20 @@ namespace dotnetapp.Controllers
             }
         }
 
-
-
-
-
-
+        //OderDetail
         [HttpGet]
         [Route("GetOrderDetail")]
         public IActionResult GetOrderDetail(){
             var orderlist=db.OrderDetails;
             return Ok(orderlist);
+        }
+
+        [HttpPost]
+        [Route("PostOrderDetails")]
+        public IActionResult PostOrderDetails(OrderDetail O){
+            db.OrderDetails.Add(O);
+            db.SaveChanges();
+            return Ok();
         }
     }
 }

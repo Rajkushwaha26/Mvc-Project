@@ -16,7 +16,7 @@ namespace dotnetapp.Models
         public int UserId { get; set; }//FK
 
         [ForeignKey("MenuId")]
-        public int MenuIId { get; set; }//FK
+        public int MenuId { get; set; }//FK
         public int Quantity { get; set; }
     }
 }
