@@ -11,5 +11,6 @@ namespace dotnetapp.Controllers
     public class UserController : ControllerBase
     {
         public ApplicationDbContext 
+        
     }
 }
