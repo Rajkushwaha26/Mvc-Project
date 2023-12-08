@@ -14,7 +14,7 @@ namespace dotnetapp.Models
         public string Password { get; set; }
         public string Email { get; set; }
 
-        [ForeignKey("Role")]
+        [ForeignKey("RoleId")]
         public int RoleId { get; set; }//FK
     }
 }
