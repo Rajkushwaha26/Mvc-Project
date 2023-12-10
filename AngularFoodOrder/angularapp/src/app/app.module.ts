@@ -10,6 +10,7 @@ import { PaymentComponent } from './FoodOrder/payment/payment.component';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NavBarComponent } from './FoodOrder/nav-bar/nav-bar.component';
+import { ReviesComponent } from './FoodOrder/revies/revies.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NavBarComponent } from './FoodOrder/nav-bar/nav-bar.component';
     MenuComponent,
     CartComponent,
     PaymentComponent,
-    NavBarComponent
+    NavBarComponent,
+    ReviesComponent
   ],
   imports: [
     BrowserModule,
