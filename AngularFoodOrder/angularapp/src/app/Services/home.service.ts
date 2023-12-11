@@ -5,6 +5,9 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class HomeService {
+  getAll(): import("../FoodOrder/Models/food").Food[] {
+    throw new Error('Method not implemented.');
+  }
 
   private url='';
 

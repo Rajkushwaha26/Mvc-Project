@@ -8,7 +8,7 @@ export const sample_data:Food[]=[
         tags:['Fastfood','Pizza','Snack'],
         favorite:false,
         stars:4.5,
-        imageurl:'/assets/images/p-1'
+        imageurl:'/assets/images/p-1.jpg'
 
     },
     {
@@ -18,7 +18,7 @@ export const sample_data:Food[]=[
         tags:['Fastfood','Pizza','Snack'],
         favorite:false,
         stars:4.5,
-        imageurl:'/assets/images/p-1'
+        imageurl:'/assets/images/p-2.jpg'
 
     },
     {
@@ -28,7 +28,7 @@ export const sample_data:Food[]=[
         tags:['Icrecream','Cream','Sweet'],
         favorite:true,
         stars:5,
-        imageurl:'/assets/images/p-2'
+        imageurl:'/assets/images/p-3.jpg'
 
     },
     {
