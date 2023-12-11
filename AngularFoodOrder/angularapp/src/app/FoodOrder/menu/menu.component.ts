@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuService } from 'src/app/Services/menu.service';
 
 @Component({
   selector: 'app-menu',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
+  images:string[]=[];
 
-  constructor() { }
+  constructor(private fs:MenuService) { }
 
-  ngOnInit() {
+  ngOnInit():void {
+    this.images=this.fs.getAllImage();
   }
 
 }
