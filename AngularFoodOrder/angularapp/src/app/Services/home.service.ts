@@ -1,18 +1,19 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Food } from '../FoodOrder/Models/food';
+import { sample_data } from 'src/assets/data';
 
 @Injectable({
   providedIn: 'root'
 })
 export class HomeService {
-  getAll(): import("../FoodOrder/Models/food").Food[] {
-    throw new Error('Method not implemented.');
+  
+
+  constructor() { }
+  getAll():Food[]{
+    return sample_data
   }
-
-  private url='';
-
-  constructor(private http:HttpClient) { }
-  httpoptions={headers:new HttpHeaders({ 'Context-type': 'application-type' })}
+  
 
   
 }
