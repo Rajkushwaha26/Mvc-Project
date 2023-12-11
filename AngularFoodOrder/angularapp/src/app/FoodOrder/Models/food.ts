@@ -1,6 +1,11 @@
 export class Food{
     id:number
-    price:string
+    price:number
     name:string
+    tags?:string[]
+    favorite:boolean
+    stars:number
+    imageurl:string
+
     
 }
