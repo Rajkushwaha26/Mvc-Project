@@ -11,10 +11,10 @@ a:hover{
   color: #fff;
 }
 .container{
-  margin: 0 auto;
-  justify-content: space-between;
-  display: flex;
+  margin: 1px;
   float: left;
+  
+  
 }
 a.logo{
   font-weight: bold;
@@ -22,7 +22,7 @@ a.logo{
 }
 nav ul{
   list-style-type: none;
-  margin: 0;
+  /* margin: 0; */
 }
 nav ul li a{
   padding: 1em;
