@@ -2,14 +2,14 @@ header{
   position: relative;
   background: white;
   padding: 0;
-  border-bottom: 1px solid #e72;
+  border-bottom: 1px solid #e72929;
 }
 a{
-  color: darkgoldenrod;
+  color: #af1313;
 }
 a:hover{
   background-color:antiquewhite;
-  color: #fff;
+  color: white;
   cursor: pointer;
 }
 .container{
@@ -18,7 +18,7 @@ a:hover{
   justify-content: space-between;
   
 }
-a.log{
+a.logo{
   font-weight: 900;
   padding: 1rem;
 }
@@ -34,18 +34,26 @@ ul a{
 }
 a span{
   background: #ff4d4d;
-  color: #fff;
+  color: white;
   padding: 0.1rem 0.45rem;
   border-radius: 100rem;
   font-size: 0.9rem;
 }
 .menu-container{
-  position:absolute;
+  position:relative;
+
+}
+.menu{
+  position: absolute;
   z-index:1;
   background: whitesmoke;
+  display: none;
+
 }
-nav ul li a{
-  padding: 1em;
-  display: inline-block;
-  list-style-type: none;
+.menu-container:hover .menu{
+  display: block;
+}
+.menu a{
+  width: 100%;
+  min-width: 8rem;
 }
