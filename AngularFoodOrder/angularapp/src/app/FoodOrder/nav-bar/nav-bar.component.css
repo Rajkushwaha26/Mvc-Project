@@ -17,7 +17,7 @@ a:hover{
   float: left;
 }
 a.logo{
-  font-family: bold;
+  font-weight: bold;
   padding: 1em;
 }
 nav ul{
