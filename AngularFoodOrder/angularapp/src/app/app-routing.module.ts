@@ -11,7 +11,7 @@ import { ReviesComponent } from './FoodOrder/revies/revies.component';
 const routes: Routes = [
   {path:'',component:HomeComponent},
   {path:'app-nav-bar',component:NavBarComponent},
-  {path:'app-home',component:HomeComponent},
+  {path:'app-app-home',component:HomeComponent},
   {path:'app-cart',component:CartComponent},
   {path:'app-menu',component:MenuComponent},
   {path:'app-revies',component:ReviesComponent},

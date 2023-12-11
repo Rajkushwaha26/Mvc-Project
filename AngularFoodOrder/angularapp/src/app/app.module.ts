@@ -12,7 +12,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NavBarComponent } from './FoodOrder/nav-bar/nav-bar.component';
 import { ReviesComponent } from './FoodOrder/revies/revies.component';
 
-import { RatingModule } from 'ng-starrating';
+
 
 @NgModule({
   declarations: [
@@ -29,8 +29,8 @@ import { RatingModule } from 'ng-starrating';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule,
-    RatingModule
+    ReactiveFormsModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
