@@ -9,8 +9,7 @@ namespace dotnetapp.Models
     {
         //[Key]
         public int MenuId { get; set; }
-        public string Name { get; set; }
-        public string
+        public string Name { get; set;}
         public string Description { get; set; }
         public string Price { get; set; }
     }
